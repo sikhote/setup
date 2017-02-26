@@ -12,7 +12,7 @@ chmod +x ./sony.sh; ./sony.sh
 ## post install
 - run `rm -rf ~/Downloads/setup`
 - configure: dropbox, firefox, transmission
-- add ssh keys
+- add ssh key
 
 ## save
 `chmod +x ./save.sh; ./save.sh`
