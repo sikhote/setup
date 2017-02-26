@@ -1,0 +1,117 @@
+"*":
+  "Remote-FTP":
+    hideLocalWhenDisplayed: true
+    showViewOnStartup: false
+  "atom-beautify":
+    css:
+      selector_separator_newline: true
+    general:
+      _analyticsUserId: "0e8fa32f-e009-4c2e-a1df-9588a2d2b803"
+      analytics: false
+  "atom-terminal-panel": {}
+  "autoclose-html":
+    forceInline: [
+      "*"
+    ]
+  core:
+    audioBeep: false
+    closeEmptyWindows: false
+    destroyEmptyPanes: false
+    disabledPackages: [
+      "whitespace"
+    ]
+    ignoredNames: [
+      ".DS_Store"
+    ]
+    packagesWithKeymapsDisabled: [
+      "whitespace"
+      "navigate"
+    ]
+    projectHome: "/Volumes/cloud/projects"
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "solarized-dark-syntax"
+    ]
+  editor:
+    fontFamily: "Meslo LG M"
+    invisibles: {}
+    showIndentGuide: true
+    softWrap: true
+    softWrapHangingIndent: 2
+  "exception-reporting":
+    userId: "56e4d23d-1c1d-3c4d-fed2-fad278567df5"
+  "highlight-selected": {}
+  "language-babel": {}
+  linter:
+    lintOnFlyInterval: 5000
+  "linter-eslint": {}
+  "markdown-preview-plus": {}
+  navigate: {}
+  "one-dark-ui":
+    tabSizing: "Even"
+  "open-recent":
+    maxRecentDirectories: 12
+    maxRecentFiles: 12
+  pigments: {}
+  "platformio-ide-terminal":
+    ansiColors:
+      normal:
+        blue: "#268bd2"
+        cyan: "#2aa198"
+        green: "#859900"
+        magenta: "#d33682"
+        red: "#d30102"
+        white: "#eee8d5"
+        yellow: "#b58900"
+      zBright:
+        brightBlack: "#586e75"
+        brightBlue: "#839496"
+        brightCyan: "#93a1a1"
+        brightGreen: "#586e75"
+        brightMagenta: "#71c4ed"
+        brightRed: "#cb4b16"
+        brightWhite: "#fdf6e3"
+        brightYellow: "#657b83"
+    core:
+      autoRunCommand: "[ -f ./.run ] && ./.run; clear"
+    style:
+      animationSpeed: 5
+    toggles:
+      autoClose: true
+  "tree-view":
+    sortFoldersBeforeFiles: false
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
+".babel.regexp.source":
+  editor:
+    softWrapHangingIndent: 3
+".coffee.jsx.source":
+  editor:
+    autoIndentOnPaste: true
+    softWrapHangingIndent: 3
+".css.source.stylus":
+  editor:
+    autoIndentOnPaste: true
+    softWrapHangingIndent: 3
+    tabLength: 3
+".ini.source":
+  editor:
+    softWrapHangingIndent: 3
+".js.jsx.source":
+  editor:
+    softWrapHangingIndent: 3
+".js.regexp.replacement.source":
+  editor:
+    softWrapHangingIndent: 3
+".js.regexp.source":
+  editor:
+    softWrapHangingIndent: 3
+".js.source":
+  editor:
+    softWrapHangingIndent: 3
+".source.stylus":
+  editor:
+    softWrapHangingIndent: 3
