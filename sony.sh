@@ -10,9 +10,3 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 echo 'desktop'
 yes | cp desktop.jpg ~/Pictures
 osascript -e 'tell application "System Events" to set picture of every desktop to ("/Users/david/Pictures/desktop.jpg" as POSIX file as alias)'
-
-echo 'ssh'
-mkdir ~/.ssh
-yes | cp david/id_rsa ~/.ssh/
-yes | cp david/id_rsa.pub ~/.ssh/
-chmod 400 ~/.ssh/id_rsa
