@@ -125,3 +125,6 @@ git clone git://github.com/altercation/vim-colors-solarized.git
 git clone git://github.com/editorconfig/editorconfig-vim.git
 git clone git://github.com/elzr/vim-json.git
 git clone git://github.com/jelera/vim-javascript-syntax.git
+
+echo 'gitconfig'
+yes | cp gitconfig ~/.gitconfig
