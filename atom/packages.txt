@@ -9,11 +9,14 @@ git-blame
 highlight-selected
 hyperclick
 js-hyperclick
+language-typescript-grammars-only
 linter
 linter-eslint
 linter-jsonlint
+linter-tslint
 markdown-preview-plus
 open-recent
 pigments
 platformio-ide-terminal
+prettier-atom
 react

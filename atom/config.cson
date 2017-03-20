@@ -44,8 +44,10 @@
   "highlight-selected": {}
   "language-babel": {}
   linter:
+    errorPanelHeight: 26
     lintOnFlyInterval: 5000
-  "linter-eslint": {}
+  "linter-eslint":
+    globalNodePath: "/Users/david/.nvm/versions/node/v7.2.1"
   "markdown-preview-plus": {}
   navigate: {}
   "one-dark-ui":
@@ -79,6 +81,8 @@
       animationSpeed: 5
     toggles:
       autoClose: true
+  "prettier-atom":
+    singleQuote: true
   "tree-view":
     sortFoldersBeforeFiles: false
   welcome:
