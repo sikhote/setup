@@ -6,7 +6,7 @@ fi
 alias px="export http_proxy=http://www-west.sony.com:80; export https_proxy=http://www-west.sony.com:80; export HTTP_PROXY=http://www-west.sony.com:80; export HTTPS_PROXY=http://www-west.sony.com:80; npm config set proxy=http://www-west.sony.com:80; npm config set https-proxy=http://www-west.sony.com:80"
 alias upx="unset http_proxy; unset https_proxy; unset HTTP_PROXY; unset HTTPS_PROXY; npm config delete proxy; npm config delete https-proxy"
 alias gitsony="git config --global user.email david.sinclair@sony.com"
-alias gitme="git config --global user.email david@sikhote.com"
+alias gitme="git config --global user.email mail@davidsinclair.io"
 alias gits="git status"
 alias gita="git add -A"
 alias gitc="git commit -m"
