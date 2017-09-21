@@ -1,7 +1,6 @@
 echo 'brew'
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install bash-git-prompt nginx curl git wget mongodb
-brew install vim --with-override-system-vi --with-lua
+brew install bash-git-prompt curl git wget mongodb
 brew cask install atom
 brew cask install dropbox
 brew cask install firefox
@@ -41,12 +40,6 @@ defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
 defaults write com.apple.finder ShowStatusBar -bool true
 defaults write com.apple.finder WarnOnEmptyTrash -boolean false
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES
-
-echo 'itunes preferences'
-defaults write com.apple.iTunes disableGeniusSidebar -bool true
-defaults write com.apple.iTunes disablePing -bool true
-defaults write com.apple.iTunes disablePingSidebar -bool true
-defaults write com.apple.iTunes show-store-link-arrows -bool false
 
 echo 'other preferences'
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
@@ -98,7 +91,7 @@ mkdir -p ~/Screenshots
 
 echo 'git'
 git config --global user.name "David Sinclair"
-git config --global user.email "david@sikhote.com"
+git config --global user.email "mail@davidsinclair.io"
 
 echo 'fonts'
 yes | cp fonts/* ~/Library/Fonts
@@ -110,21 +103,3 @@ yes | cp atom/styles.less ~/.atom/styles.less
 
 echo 'hyper'
 yes | cp hyper.js ~/.hyper.js
-
-echo 'vim'
-yes | cp vimrc ~/.vimrc
-
-echo 'vim pathogen'
-mkdir -p ~/.vim/autoload ~/.vim/bundle && \
-curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-
-echo 'vim pathogen plugins'
-cd ~/.vim/bundle
-git clone git://github.com/tpope/vim-fugitive.git
-git clone git://github.com/altercation/vim-colors-solarized.git
-git clone git://github.com/editorconfig/editorconfig-vim.git
-git clone git://github.com/elzr/vim-json.git
-git clone git://github.com/jelera/vim-javascript-syntax.git
-
-echo 'gitconfig'
-yes | cp gitconfig ~/.gitconfig
