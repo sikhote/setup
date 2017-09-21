@@ -95,8 +95,7 @@ module.exports = {
     'hyper-solarized-dark',
     'hyperterm-paste',
     'hyperterm-tabs',
-    'hyper-blink',
-    'hyperpower'
+    'hyper-blink'
   ],
 
   // in development, you can create a directory under

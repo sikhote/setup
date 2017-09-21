@@ -1,6 +1,6 @@
-Remote-FTP
 atom-beautify
 autoclose-html
+busy-signal
 color-picker
 colorful-json
 editorconfig
@@ -8,12 +8,14 @@ fold-functions
 git-blame
 highlight-selected
 hyperclick
+intentions
 js-hyperclick
 language-typescript-grammars-only
 linter
 linter-eslint
 linter-jsonlint
 linter-tslint
+linter-ui-default
 markdown-preview-plus
 open-recent
 pigments

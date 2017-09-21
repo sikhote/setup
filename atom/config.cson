@@ -27,12 +27,14 @@
       "whitespace"
       "navigate"
     ]
-    projectHome: "/Volumes/cloud/projects"
+    projectHome: "~/Projects"
+    restorePreviousWindowsOnStart: "always"
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
       "solarized-dark-syntax"
     ]
+    warnOnLargeFileLimit: 1
   editor:
     fontFamily: "Meslo LG M"
     invisibles: {}
@@ -43,11 +45,12 @@
     userId: "56e4d23d-1c1d-3c4d-fed2-fad278567df5"
   "highlight-selected": {}
   "language-babel": {}
-  linter:
-    errorPanelHeight: 26
-    lintOnFlyInterval: 5000
+  linter: {}
   "linter-eslint":
-    globalNodePath: "/Users/david/.nvm/versions/node/v7.2.1"
+    globalNodePath: "/Users/david/.nvm/versions/node/v8.5.0"
+    lintHtmlFiles: true
+  "linter-ui-default":
+    panelHeight: 69
   "markdown-preview-plus": {}
   navigate: {}
   "one-dark-ui":
@@ -77,12 +80,17 @@
         brightYellow: "#657b83"
     core:
       autoRunCommand: "[ -f ./.run ] && ./.run; clear"
+      scrollback: 2000
     style:
       animationSpeed: 5
     toggles:
       autoClose: true
+      runInsertedText: false
   "prettier-atom":
-    singleQuote: true
+    prettierOptions:
+      singleQuote: true
+      trailingComma: "all"
+    useEslint: true
   "tree-view":
     sortFoldersBeforeFiles: false
   welcome:
