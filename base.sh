@@ -12,6 +12,7 @@ brew cask install vlc
 brew cask install spectacle
 brew cask install transmission
 brew cask install hyper
+brew cask install megasync
 
 echo "projects"
 mkdir -p ~/Projects
