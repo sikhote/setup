@@ -50,7 +50,7 @@
     globalNodePath: "/Users/david/.nvm/versions/node/v8.5.0"
     lintHtmlFiles: true
   "linter-ui-default":
-    panelHeight: 69
+    panelHeight: 138
   "markdown-preview-plus": {}
   navigate: {}
   "one-dark-ui":
