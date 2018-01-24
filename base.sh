@@ -22,8 +22,8 @@ yes | cp Solarized_Extravagant.bgptheme /usr/local/opt/bash-git-prompt/share/the
 echo 'nvm & npm'
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.30.2/install.sh | bash
 source ~/.bash_profile
-nvm install --lts/*
-nvm alias default lts/*
+nvm install 8
+nvm alias default 8
 
 echo 'finder preferences'
 /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy name" ~/Library/Preferences/com.apple.finder.plist
