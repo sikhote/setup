@@ -43,14 +43,18 @@
     softWrapHangingIndent: 2
   "exception-reporting":
     userId: "56e4d23d-1c1d-3c4d-fed2-fad278567df5"
+  "git-blame":
+    columnWidth: 330
   "highlight-selected": {}
   "language-babel": {}
   linter: {}
   "linter-eslint":
-    globalNodePath: "/Users/david/.nvm/versions/node/v8.5.0"
+    fixOnSave: true
+    globalNodePath: "/Users/david/.nvm/versions/node/v6.11.2"
     lintHtmlFiles: true
   "linter-ui-default":
     panelHeight: 138
+    showPanel: true
   "markdown-preview-plus": {}
   navigate: {}
   "one-dark-ui":
@@ -86,6 +90,7 @@
     toggles:
       autoClose: true
       runInsertedText: false
+      selectToCopy: false
   "prettier-atom":
     prettierOptions:
       singleQuote: true

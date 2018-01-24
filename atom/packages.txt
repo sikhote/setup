@@ -3,6 +3,7 @@ autoclose-html
 busy-signal
 color-picker
 colorful-json
+duplicate-line-or-selection
 editorconfig
 fold-functions
 git-blame
@@ -14,7 +15,6 @@ language-typescript-grammars-only
 linter
 linter-eslint
 linter-jsonlint
-linter-tslint
 linter-ui-default
 markdown-preview-plus
 open-recent

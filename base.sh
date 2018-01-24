@@ -5,14 +5,12 @@ brew cask install atom
 brew cask install dropbox
 brew cask install firefox
 brew cask install google-chrome
-brew cask install mongochef
 brew cask install steam
 brew cask install the-unarchiver
 brew cask install vlc
 brew cask install spectacle
 brew cask install transmission
 brew cask install hyper
-brew cask install megasync
 
 echo "projects"
 mkdir -p ~/Projects
@@ -24,8 +22,8 @@ yes | cp Solarized_Extravagant.bgptheme /usr/local/opt/bash-git-prompt/share/the
 echo 'nvm & npm'
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.30.2/install.sh | bash
 source ~/.bash_profile
-nvm install node
-nvm alias default node
+nvm install --lts/*
+nvm alias default lts/*
 
 echo 'finder preferences'
 /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy name" ~/Library/Preferences/com.apple.finder.plist
@@ -92,7 +90,7 @@ mkdir -p ~/Screenshots
 
 echo 'git'
 git config --global user.name "David Sinclair"
-git config --global user.email "mail@davidsinclair.io"
+git config --global user.email "david@sinclair.tech"
 
 echo 'fonts'
 yes | cp fonts/* ~/Library/Fonts
