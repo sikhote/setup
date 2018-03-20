@@ -43,18 +43,21 @@
     softWrapHangingIndent: 2
   "exception-reporting":
     userId: "56e4d23d-1c1d-3c4d-fed2-fad278567df5"
-  "git-blame":
-    columnWidth: 330
   "highlight-selected": {}
-  "language-babel": {}
+  "language-babel":
+    autoIndentJSX: true
+    createTargetDirectories: false
+    suppressTranspileOnSaveMessages: false
+    taggedTemplateGrammar: [
+      "\"(?<=<style jsx>{)|(?<=<style jsx global>{)\":source.css.styled"
+    ]
   linter: {}
   "linter-eslint":
     fixOnSave: true
-    globalNodePath: "/Users/david/.nvm/versions/node/v6.11.2"
+    globalNodePath: "/Users/david/.nvm/versions/node/v8.5.0"
     lintHtmlFiles: true
   "linter-ui-default":
     panelHeight: 138
-    showPanel: true
   "markdown-preview-plus": {}
   navigate: {}
   "one-dark-ui":
@@ -83,19 +86,18 @@
         brightWhite: "#fdf6e3"
         brightYellow: "#657b83"
     core:
-      autoRunCommand: "[ -f ./.run ] && ./.run; clear"
       scrollback: 2000
     style:
       animationSpeed: 5
     toggles:
       autoClose: true
       runInsertedText: false
-      selectToCopy: false
   "prettier-atom":
+    formatOnSaveOptions:
+      isDisabledIfNotInPackageJson: true
     prettierOptions:
       singleQuote: true
       trailingComma: "all"
-    useEslint: true
   "tree-view":
     sortFoldersBeforeFiles: false
   welcome:
