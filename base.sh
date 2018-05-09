@@ -1,6 +1,6 @@
 echo 'brew'
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install bash-git-prompt curl git wget mongodb yarn awscli
+brew install bash-git-prompt git yarn awscli
 brew cask install atom
 brew cask install dropbox
 brew cask install firefox
@@ -11,6 +11,7 @@ brew cask install vlc
 brew cask install spectacle
 brew cask install transmission
 brew cask install hyper
+brew install caskroom/cask/postman
 
 echo "projects"
 mkdir -p ~/Projects
