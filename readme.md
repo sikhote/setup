@@ -9,11 +9,11 @@ chmod +x ./cyclo.sh; ./cyclo.sh
 
 ## post install
 - run `rm -rf ~/Downloads/setup`
-- configure: dropbox, firefox, transmission
+- configure: dropbox, chrome, firefox, transmission
 - add ssh key
 
 ## save
 `chmod +x ./save.sh; ./save.sh`
 
 ## post save
-- backup itunes, bookmarks, downloads, cloud
+- backup downloads
