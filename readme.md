@@ -5,8 +5,6 @@ install as much as possible through cli
 ```
 cd ~/Downloads/setup
 chmod +x ./cyclo.sh; ./cyclo.sh
-chmod +x ./nodessertro.sh; ./nodessertro.sh
-chmod +x ./sony.sh; ./sony.sh
 ```
 
 ## post install
