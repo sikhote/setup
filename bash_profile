@@ -6,3 +6,6 @@ fi
 alias gits="git status"
 alias gita="git add -A"
 alias gitc="git commit -m"
+alias gitco="git checkout"
+alias gitp="git pull origin"
+alias gitph="git push origin"
