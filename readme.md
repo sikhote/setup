@@ -1,5 +1,5 @@
 # setup
-install as much as possible through cli
+Install as much as possible through cli
 
 ## install
 ```
