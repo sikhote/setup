@@ -53,8 +53,7 @@
     taggedTemplateGrammar: [
       "\"(?<=<style jsx>{)|(?<=<style jsx global>{)\":source.css.styled"
     ]
-  linter:
-    lintOnOpen: false
+  linter: {}
   "linter-eslint":
     globalNodePath: "/Users/david/.nvm/versions/node/v8.5.0"
     lintHtmlFiles: true
