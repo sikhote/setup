@@ -74,7 +74,7 @@ killall Dock
 
 echo 'sleep'
 sudo pmset -a sleep 0
-sudo pmset -a displaysleep 2
+sudo pmset -a displaysleep 10
 sudo pmset -a disksleep 60
 sudo pmset -a autorestart 1
 sudo pmset -a acwake 1
