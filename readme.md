@@ -3,17 +3,14 @@ Install as much as possible through cli
 
 ## install
 ```
-cd ~/Downloads/setup
+cd ~/Downloads
+unzip setup-mac-master.zip
+rm -rf setup-mac-master.zip
+cd setup-mac-master
 chmod +x ./cyclo.sh; ./cyclo.sh
 ```
 
 ## post install
 - run `rm -rf ~/Downloads/setup`
-- configure: dropbox, chrome, firefox, transmission
+- configure: dropbox, firefox, transmission
 - add ssh key
-
-## save
-`chmod +x ./save.sh; ./save.sh`
-
-## post save
-- backup downloads

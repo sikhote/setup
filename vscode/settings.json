@@ -1,0 +1,15 @@
+{
+  "workbench.colorTheme": "Solarized Dark",
+  "workbench.startupEditor": "newUntitledFile",
+  "window.nativeTabs": true,
+  "editor.rulers": [
+      80
+  ],
+  "explorer.sortOrder": "mixed",
+  "editor.snippetSuggestions": "top",
+  "editor.wordWrap": "on",
+  "editor.wrappingIndent": "indent",
+  "xo.enable": true,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "window.restoreWindows": "all"
+}
