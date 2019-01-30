@@ -106,9 +106,9 @@ code --install-extension esbenp.prettier-vscode
 code --install-extension naumovs.color-highlight
 code --install-extension PeterJausovec.vscode-docker
 code --install-extension samverschueren.linter-xo
-mkdir -p ~/Library/Application Support/Code/User/snippets/
-yes | cp vscode/snippets/* ~/Library/Application Support/Code/User/snippets/
-yes | cp vscode/settings.json ~/Library/Application Support/Code/User/
+mkdir -p ~/Library/Application\ Support/Code/User/snippets/
+yes | cp vscode/snippets/* ~/Library/Application\ Support/Code/User/snippets/
+yes | cp vscode/settings.json ~/Library/Application\ Support/Code/User/
 
 echo 'hyper'
 yes | cp hyper.js ~/.hyper.js
