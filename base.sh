@@ -49,6 +49,8 @@ defaults write CGDisableCursorLocationMagnification -bool YES
 defaults write com.apple.BezelServices kDim -bool false
 defaults write com.apple.CrashReporter DialogType -string "none"
 defaults write com.apple.dock 'orientation' -string 'left'
+defaults write com.apple.Dock autohide-delay -float 0
+defaults write com.apple.Dock autohide -bool true
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.dock launchanim -bool false
@@ -74,7 +76,7 @@ killall Dock
 
 echo 'sleep'
 sudo pmset -a sleep 0
-sudo pmset -a displaysleep 10
+sudo pmset -a displaysleep 2
 sudo pmset -a disksleep 60
 sudo pmset -a autorestart 1
 sudo pmset -a acwake 1
@@ -106,9 +108,9 @@ code --install-extension esbenp.prettier-vscode
 code --install-extension naumovs.color-highlight
 code --install-extension PeterJausovec.vscode-docker
 code --install-extension samverschueren.linter-xo
-mkdir -p ~/Library/Application\ Support/Code/User/snippets/
-yes | cp vscode/snippets/* ~/Library/Application\ Support/Code/User/snippets/
-yes | cp vscode/settings.json ~/Library/Application\ Support/Code/User/
+mkdir -p ~/Library/Application Support/Code/User/snippets/
+yes | cp vscode/snippets/* ~/.config/Code/User/snippets/
+yes | cp vscode/settings.json ~/Library/Application Support/Code/User/
 
 echo 'hyper'
 yes | cp hyper.js ~/.hyper.js
