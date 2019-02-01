@@ -48,9 +48,9 @@ defaults -currentHost write com.apple.screensaver idleTime -int 0
 defaults write CGDisableCursorLocationMagnification -bool YES
 defaults write com.apple.BezelServices kDim -bool false
 defaults write com.apple.CrashReporter DialogType -string "none"
-defaults write com.apple.dock 'orientation' -string 'left'
 defaults write com.apple.Dock autohide-delay -float 0
 defaults write com.apple.Dock autohide -bool true
+defaults write com.apple.dock 'orientation' -string 'left'
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.dock launchanim -bool false
