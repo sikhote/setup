@@ -11,6 +11,6 @@ chmod +x ./cyclo.sh; ./cyclo.sh
 ```
 
 ## post install
-- run `rm -rf ~/Downloads/setup`
+- run `rm -rf ~/Downloads/setup-mac-master`
 - configure: dropbox, firefox, transmission
 - add ssh key
