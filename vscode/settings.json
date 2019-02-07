@@ -11,5 +11,6 @@
   "editor.wrappingIndent": "indent",
   "xo.enable": true,
   "javascript.updateImportsOnFileMove.enabled": "never",
-  "window.restoreWindows": "all"
+  "window.restoreWindows": "all",
+  "workbench.tree.indent": 20,
 }
