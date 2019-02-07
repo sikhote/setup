@@ -100,6 +100,7 @@ echo 'fonts'
 yes | cp fonts/* ~/Library/Fonts
 
 echo 'vscode'
+code --install-extension eamodio.gitlens
 code --install-extension blanu.vscode-styled-jsx
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension EditorConfig.EditorConfig
