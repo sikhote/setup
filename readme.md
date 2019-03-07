@@ -14,3 +14,4 @@ chmod +x ./cyclo.sh; ./cyclo.sh
 - run `rm -rf ~/Downloads/setup-mac-master`
 - configure: dropbox, firefox, transmission
 - add ssh key
+- [hide firefox tabs](https://superuser.com/questions/1268732/how-to-hide-tab-bar-tabstrip-in-firefox-57-quantum)

@@ -11,6 +11,7 @@ brew cask install spectacle
 brew cask install transmission
 brew cask install hyper
 brew cask install visual-studio-code
+brew cask install now
 brew install caskroom/cask/postman
 
 echo "projects"
@@ -50,7 +51,7 @@ defaults write com.apple.BezelServices kDim -bool false
 defaults write com.apple.CrashReporter DialogType -string "none"
 defaults write com.apple.Dock autohide-delay -float 0
 defaults write com.apple.Dock autohide -bool true
-defaults write com.apple.dock 'orientation' -string 'left'
+defaults write com.apple.dock 'orientation' -string 'bottom'
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.dock launchanim -bool false
@@ -59,7 +60,7 @@ defaults write com.apple.iokit.AmbientLightSensor "Automatic Display Enabled" -i
 defaults write com.apple.iokit.AmbientLightSensor "Automatic Keyboard Enabled" -int 0
 defaults write com.apple.screencapture location ~/Screenshots
 defaults write com.apple.screensaver askForPassword -int 1
-defaults write com.apple.screensaver askForPasswordDelay -int 900
+defaults write com.apple.screensaver askForPasswordDelay -int 1800
 defaults write com.apple.screensaver idleTime -int 0
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
@@ -76,7 +77,7 @@ killall Dock
 
 echo 'sleep'
 sudo pmset -a sleep 0
-sudo pmset -a displaysleep 2
+sudo pmset -a displaysleep 10
 sudo pmset -a disksleep 60
 sudo pmset -a autorestart 1
 sudo pmset -a acwake 1
