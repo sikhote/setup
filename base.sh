@@ -10,7 +10,7 @@ brew cask install vlc
 brew cask install spectacle
 brew cask install transmission
 brew cask install hyper
-brew cask install visual-studio-code
+brew cask install vscodium
 brew cask install now
 brew install caskroom/cask/postman
 
