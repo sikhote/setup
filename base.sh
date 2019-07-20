@@ -9,7 +9,7 @@ brew cask install the-unarchiver
 brew cask install vlc
 brew cask install spectacle
 brew cask install transmission
-brew cask install visual-studio-code
+brew cask install vscodium
 brew cask install now
 brew cask install iterm2
 brew cask install postman
