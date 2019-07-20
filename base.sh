@@ -1,6 +1,6 @@
 echo 'brew'
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install bash-git-prompt git yarn awscli
+brew install bash-git-prompt git yarn awscli dark-mode
 brew cask install dropbox
 brew cask install firefox
 brew cask install google-chrome
@@ -9,10 +9,10 @@ brew cask install the-unarchiver
 brew cask install vlc
 brew cask install spectacle
 brew cask install transmission
-brew cask install hyper
 brew cask install visual-studio-code
 brew cask install now
-brew install caskroom/cask/postman
+brew cask install iterm2
+brew cask install postman
 
 echo "projects"
 mkdir -p ~/Projects
@@ -26,6 +26,9 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.30.2/install.sh | b
 source ~/.bash_profile
 nvm install 10
 nvm alias default 10
+
+echo 'dark mode'
+dark-mode on
 
 echo 'finder preferences'
 /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy name" ~/Library/Preferences/com.apple.finder.plist
