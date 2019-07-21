@@ -3,10 +3,10 @@ Install as much as possible through cli
 
 ## install
 ```
-cd ~/Downloads
-unzip setup-mac-master.zip
-rm -rf setup-mac-master.zip
-cd setup-mac-master
+mkdir ~/Projects
+cd ~/Projects
+git clone https://github.com/sikhote/setup-mac.git
+cd setup-mac
 chmod +x ./cyclo.sh; ./cyclo.sh
 chmod +x ./icicle.sh; ./icicle.sh
 chmod +x ./biggo.sh; ./biggo.sh
