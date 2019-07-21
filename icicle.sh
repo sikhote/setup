@@ -1,5 +1,5 @@
 echo 'base'
-chmod +x ./base.sh; ./base.sh
+chmod +x ./end.sh; ./end.sh
 
 echo 'computer'
 sudo scutil --set ComputerName "$USER"
