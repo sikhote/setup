@@ -1,6 +1,6 @@
 echo 'brew'
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install bash-git-prompt git yarn awscli dark-mode zsh
+brew install git yarn awscli dark-mode zsh
 brew cask install dropbox
 brew cask install firefox
 brew cask install google-chrome
