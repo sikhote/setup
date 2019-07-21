@@ -9,10 +9,10 @@ rm -rf setup-mac-master.zip
 cd setup-mac-master
 chmod +x ./cyclo.sh; ./cyclo.sh
 chmod +x ./icicle.sh; ./icicle.sh
+chmod +x ./biggo.sh; ./biggo.sh
 ```
 
 ## post install
 - run `rm -rf ~/Downloads/setup-mac-master`
 - configure: dropbox, firefox, transmission
 - add ssh key
-- [hide firefox tabs](https://superuser.com/questions/1268732/how-to-hide-tab-bar-tabstrip-in-firefox-57-quantum)
