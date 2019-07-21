@@ -1,6 +1,6 @@
 echo 'brew'
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install bash-git-prompt git yarn awscli dark-mode
+brew install bash-git-prompt git yarn awscli dark-mode zsh
 brew cask install dropbox
 brew cask install firefox
 brew cask install google-chrome
@@ -17,24 +17,43 @@ brew cask install postman
 echo "projects"
 mkdir -p ~/Projects
 
-echo 'bash_profile'
-yes | cp bash_profile ~/.bash_profile
-yes | cp Solarized_Extravagant.bgptheme /usr/local/opt/bash-git-prompt/share/themes/Solarized_Extravagant.bgptheme
+echo 'zsh'
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+yes | cp .zshrc ~/.zshrc
+yes | cp oxide.zsh-theme ~/.oh-my-zsh/custom/themes/oxide.zsh-theme
 
 echo 'nvm & npm'
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.30.2/install.sh | bash
-source ~/.bash_profile
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+source ~/.zshrc
 nvm install 10
 nvm alias default 10
 
 echo 'dark mode'
 dark-mode on
 
+echo 'scroll direction'
+defaults write com.apple.swipescrolldirection -bool NO
+
+echo 'dock'
+defaults write com.apple.Dock autohide-delay -float 0
+defaults write com.apple.Dock autohide -bool true
+defaults write com.apple.dock 'orientation' -string 'bottom'
+defaults write com.apple.dock launchanim -bool false
+defaults write com.apple.dock tilesize -integer 40
+defaults write com.apple.dock persistent-apps -array
+
+echo 'recent apps in dock'
+defaults write com.apple.dock show-recents -bool FALSE
+
+echo 'password policies'
+pwpolicy -clearaccountpolicies
+
 echo 'finder preferences'
 /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy name" ~/Library/Preferences/com.apple.finder.plist
 defaults write com.apple.finder DisableAllAnimations -bool true
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+echo 'column view'
 defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
 defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
@@ -52,13 +71,8 @@ defaults -currentHost write com.apple.screensaver idleTime -int 0
 defaults write CGDisableCursorLocationMagnification -bool YES
 defaults write com.apple.BezelServices kDim -bool false
 defaults write com.apple.CrashReporter DialogType -string "none"
-defaults write com.apple.Dock autohide-delay -float 0
-defaults write com.apple.Dock autohide -bool true
-defaults write com.apple.dock 'orientation' -string 'bottom'
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
-defaults write com.apple.dock launchanim -bool false
-defaults write com.apple.dock tilesize -integer 40
 defaults write com.apple.iokit.AmbientLightSensor "Automatic Display Enabled" -int 0
 defaults write com.apple.iokit.AmbientLightSensor "Automatic Keyboard Enabled" -int 0
 defaults write com.apple.screencapture location ~/Screenshots
@@ -75,7 +89,9 @@ defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
-defaults write com.apple.dock persistent-apps -array
+
+echo 'reset for settings'
+killall Finder
 killall Dock
 
 echo 'sleep'
@@ -104,17 +120,17 @@ echo 'fonts'
 yes | cp fonts/* ~/Library/Fonts
 
 echo 'vscode'
-code --install-extension eamodio.gitlens
-code --install-extension blanu.vscode-styled-jsx
-code --install-extension dbaeumer.vscode-eslint
-code --install-extension EditorConfig.EditorConfig
-code --install-extension esbenp.prettier-vscode
 code --install-extension naumovs.color-highlight
-code --install-extension PeterJausovec.vscode-docker
+code --install-extension EditorConfig.EditorConfig
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension esbenp.prettier-vscode
+code --install-extension blanu.vscode-styled-jsx
 code --install-extension samverschueren.linter-xo
+code --install-extension eamodio.gitlens
 mkdir -p ~/Library/Application\ Support/Code/User/snippets/
 yes | cp vscode/snippets/* ~/Library/Application\ Support/Code/User/snippets/
 yes | cp vscode/settings.json ~/Library/Application\ Support/Code/User/
 
-echo 'hyper'
-yes | cp hyper.js ~/.hyper.js
+echo 'desktop'
+yes | cp desktop.jpg ~/Pictures
+osascript -e 'tell application "System Events" to set picture of every desktop to ("/Users/$USER/Pictures/desktop.jpg" as POSIX file as alias)'

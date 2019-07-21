@@ -8,6 +8,7 @@ unzip setup-mac-master.zip
 rm -rf setup-mac-master.zip
 cd setup-mac-master
 chmod +x ./cyclo.sh; ./cyclo.sh
+chmod +x ./icicle.sh; ./icicle.sh
 ```
 
 ## post install
