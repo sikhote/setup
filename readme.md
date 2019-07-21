@@ -7,6 +7,7 @@ mkdir ~/Projects
 cd ~/Projects
 git clone https://github.com/sikhote/setup-mac.git
 cd setup-mac
+chmod +x ./start.sh; ./start.sh
 chmod +x ./cyclo.sh; ./cyclo.sh
 chmod +x ./icicle.sh; ./icicle.sh
 chmod +x ./biggo.sh; ./biggo.sh
