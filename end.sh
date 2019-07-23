@@ -2,6 +2,22 @@ echo 'zsh'
 yes | cp .zshrc ~/.zshrc
 yes | cp oxide.zsh-theme ~/.oh-my-zsh/custom/themes/oxide.zsh-theme
 
+echo 'brew'
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew install git yarn awscli dark-mode zsh
+brew cask install dropbox
+brew cask install firefox
+brew cask install google-chrome
+brew cask install steam
+brew cask install the-unarchiver
+brew cask install vlc
+brew cask install spectacle
+brew cask install transmission
+brew cask install vscodium
+brew cask install now
+brew cask install iterm2
+brew cask install postman
+
 echo 'nvm & npm'
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 source ~/.zshrc
@@ -12,7 +28,7 @@ echo 'dark mode'
 dark-mode on
 
 echo 'scroll direction'
-defaults write com.apple.swipescrolldirection -bool NO
+defaults write -g com.apple.swipescrolldirection -bool NO
 
 echo 'dock'
 defaults write com.apple.Dock autohide-delay -float 0
@@ -107,10 +123,13 @@ code --install-extension esbenp.prettier-vscode
 code --install-extension blanu.vscode-styled-jsx
 code --install-extension samverschueren.linter-xo
 code --install-extension eamodio.gitlens
-mkdir -p ~/Library/Application\ Support/Code/User/snippets/
-yes | cp vscode/snippets/* ~/Library/Application\ Support/Code/User/snippets/
-yes | cp vscode/settings.json ~/Library/Application\ Support/Code/User/
+mkdir -p ~/Library/Application\ Support/VSCodium/User/snippets/
+yes | cp vscode/snippets/* ~/Library/Application\ Support/VSCodium/User/snippets/
+yes | cp vscode/settings.json ~/Library/Application\ Support/VSCodium/User/
 
 echo 'desktop'
 yes | cp desktop.jpg ~/Pictures
-osascript -e 'tell application "System Events" to set picture of every desktop to ("/Users/$USER/Pictures/desktop.jpg" as POSIX file as alias)'
+yes | cp desktop2.jpg ~/Pictures
+part1='tell application "System Events" to set picture of every desktop to ("/Users/'
+part2='/Pictures/desktop2.jpg" as POSIX file as alias)'
+osascript -e "$part1$USER$part2"

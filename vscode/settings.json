@@ -13,4 +13,16 @@
   "javascript.updateImportsOnFileMove.enabled": "never",
   "window.restoreWindows": "all",
   "workbench.tree.indent": 20,
+  "editor.minimap.enabled": false,
+  "workbench.editor.enablePreview": false,
+  "editor.fontFamily": "Meslo LG M, Menlo, Monaco, 'Courier New', monospace",
+  "editor.tabSize": 2,
+  "files.exclude": {
+    "**/.git": false,
+    "**/.hg": false,
+    "**/.svn": false,
+    "**/CVS": false
+  },
+  "editor.find.seedSearchStringFromSelection": false,
+  "editor.suggest.localityBonus": true,
 }

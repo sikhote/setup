@@ -8,12 +8,10 @@ cd ~/Projects
 git clone https://github.com/sikhote/setup-mac.git
 cd setup-mac
 chmod +x ./start.sh; ./start.sh
-chmod +x ./cyclo.sh; ./cyclo.sh
-chmod +x ./icicle.sh; ./icicle.sh
-chmod +x ./biggo.sh; ./biggo.sh
+chmod +x ./default.sh; ./default.sh
 ```
 
 ## post install
-- run `rm -rf ~/Downloads/setup-mac-master`
-- configure: dropbox, firefox, transmission
+- configure: dropbox, firefox, transmission, iterm
 - add ssh key
+- change password
