@@ -25,4 +25,5 @@
   },
   "editor.find.seedSearchStringFromSelection": false,
   "editor.suggest.localityBonus": true,
+  "javascript.suggest.autoImports": false,
 }
