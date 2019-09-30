@@ -4,7 +4,7 @@ yes | cp oxide.zsh-theme ~/.oh-my-zsh/custom/themes/oxide.zsh-theme
 
 echo 'brew'
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install git yarn awscli dark-mode zsh
+brew install git yarn awscli dark-mode zsh sdkman
 brew cask install dropbox
 brew cask install firefox
 brew cask install google-chrome
