@@ -4,7 +4,7 @@ yes | cp oxide.zsh-theme ~/.oh-my-zsh/custom/themes/oxide.zsh-theme
 
 echo 'brew'
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install git yarn awscli dark-mode zsh sdkman
+brew install git yarn awscli dark-mode zsh
 brew cask install dropbox
 brew cask install firefox
 brew cask install google-chrome
@@ -126,6 +126,10 @@ code --install-extension eamodio.gitlens
 mkdir -p ~/Library/Application\ Support/VSCodium/User/snippets/
 yes | cp vscode/snippets/* ~/Library/Application\ Support/VSCodium/User/snippets/
 yes | cp vscode/settings.json ~/Library/Application\ Support/VSCodium/User/
+
+echo 'sdkman'
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 echo 'desktop'
 yes | cp desktop.jpg ~/Pictures
