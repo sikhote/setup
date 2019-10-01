@@ -130,6 +130,15 @@ yes | cp vscode/settings.json ~/Library/Application\ Support/VSCodium/User/
 echo 'sdkman'
 curl -s "https://get.sdkman.io" | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk install java 8.0.222.hs-adpt
+
+echo 'android'
+brew install ant
+brew install maven
+brew install gradle
+brew cask install android-sdk
+brew cask install android-ndk
+yes | sudo sdkmanager --licenses
 
 echo 'desktop'
 yes | cp desktop.jpg ~/Pictures

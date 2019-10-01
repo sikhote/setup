@@ -26,4 +26,15 @@
   "editor.find.seedSearchStringFromSelection": false,
   "editor.suggest.localityBonus": true,
   "javascript.suggest.autoImports": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "explorer.autoReveal": false,
+  "workbench.editor.tabSizing": "shrink",
+  "update.showReleaseNotes": false,
+  "gitlens.showWhatsNewAfterUpgrades": false,
+  "window.zoomLevel": 0,
 }
