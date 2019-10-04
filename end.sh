@@ -14,7 +14,6 @@ brew cask install vlc
 brew cask install spectacle
 brew cask install transmission
 brew cask install vscodium
-brew cask install now
 brew cask install iterm2
 brew cask install postman
 
@@ -23,6 +22,9 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 source ~/.zshrc
 nvm install 10
 nvm alias default 10
+
+echo "now"
+npm i -g now
 
 echo 'dark mode'
 dark-mode on
