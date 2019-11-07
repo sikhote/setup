@@ -37,4 +37,5 @@
   "update.showReleaseNotes": false,
   "gitlens.showWhatsNewAfterUpgrades": false,
   "window.zoomLevel": 0,
+  "editor.occurrencesHighlight": false
 }
