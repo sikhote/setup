@@ -1,3 +1,5 @@
+ZSH_DISABLE_COMPFIX=true
+
 alias gits="git status"
 alias gita="git add -A"
 alias gitc="git commit -m"
