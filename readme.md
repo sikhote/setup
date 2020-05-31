@@ -13,6 +13,7 @@ chmod +x ./start.sh; ./start.sh
 // choose one!
 chmod +x ./default.sh; ./default.sh
 chmod +x ./biggo.sh; ./biggo.sh
+chmod +x ./carly.sh; ./carly.sh
 ```
 
 ## post install
