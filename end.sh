@@ -25,6 +25,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 source ~/.zshrc
 nvm install 10
 nvm alias default 10
+npm install expo-cli --global
 
 echo "now"
 npm i -g now
