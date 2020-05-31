@@ -17,6 +17,8 @@ brew cask install vscodium
 brew cask install iterm2
 brew cask install postman
 brew cask install virtualbox
+brew cask install r
+brew cask install rstudio
 
 echo 'nvm & npm'
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
