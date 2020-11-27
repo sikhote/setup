@@ -1,4 +1,7 @@
 echo 'zsh'
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+echo 'zsh'
 yes | cp .zshrc ~/.zshrc
 yes | cp oxide.zsh-theme ~/.oh-my-zsh/custom/themes/oxide.zsh-theme
 
@@ -13,25 +16,29 @@ brew cask install the-unarchiver
 brew cask install vlc
 brew cask install spectacle
 brew cask install transmission
-brew cask install vscodium
 brew cask install iterm2
 brew cask install postman
 brew cask install virtualbox
 brew cask install r
 brew cask install rstudio
+brew cask install atom
 
 echo 'nvm & npm'
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 source ~/.zshrc
-nvm install 10
-nvm alias default 10
+nvm install 14
+nvm alias default 14
 npm install expo-cli --global
 
-echo "now"
-npm i -g now
+echo 'screenshots'
+mkdir -p ~/Screenshots
 
-echo 'dark mode'
-dark-mode on
+echo 'git'
+git config --global user.name "David Sinclair"
+git config --global user.email "david@sinclair.tech"
+
+echo 'atom'
+apm install --packages-file atom.txt
 
 echo 'scroll direction'
 defaults write -g com.apple.swipescrolldirection -bool NO
@@ -111,40 +118,18 @@ sudo spctl --master-disable
 echo 'library'
 chflags nohidden ~/Library
 
-echo 'screenshots'
-mkdir -p ~/Screenshots
+# echo 'sdkman'
+# curl -s "https://get.sdkman.io" | bash
+# source "$HOME/.sdkman/bin/sdkman-init.sh"
+# sdk install java 8.0.222.hs-adpt
 
-echo 'git'
-git config --global user.name "David Sinclair"
-git config --global user.email "david@sinclair.tech"
-
-echo 'fonts'
-yes | cp fonts/* ~/Library/Fonts
-
-echo 'vscode'
-code --install-extension naumovs.color-highlight
-code --install-extension EditorConfig.EditorConfig
-code --install-extension dbaeumer.vscode-eslint
-code --install-extension esbenp.prettier-vscode
-code --install-extension blanu.vscode-styled-jsx
-code --install-extension samverschueren.linter-xo
-code --install-extension eamodio.gitlens
-mkdir -p ~/Library/Application\ Support/VSCodium/User/snippets/
-yes | cp vscode/snippets/* ~/Library/Application\ Support/VSCodium/User/snippets/
-yes | cp vscode/settings.json ~/Library/Application\ Support/VSCodium/User/
-
-echo 'sdkman'
-curl -s "https://get.sdkman.io" | bash
-source "$HOME/.sdkman/bin/sdkman-init.sh"
-sdk install java 8.0.222.hs-adpt
-
-echo 'android'
-brew install ant
-brew install maven
-brew install gradle
-brew cask install android-sdk
-brew cask install android-ndk
-yes | sudo sdkmanager --licenses
+# echo 'android'
+# brew install ant
+# brew install maven
+# brew install gradle
+# brew cask install android-sdk
+# brew cask install android-ndk
+# yes | sudo sdkmanager --licenses
 
 echo 'desktop'
 yes | cp desktop.jpg ~/Pictures
@@ -152,3 +137,9 @@ yes | cp desktop2.jpg ~/Pictures
 part1='tell application "System Events" to set picture of every desktop to ("/Users/'
 part2='/Pictures/desktop2.jpg" as POSIX file as alias)'
 osascript -e "$part1$USER$part2"
+
+echo 'computer'
+sudo scutil --set ComputerName "$USER"
+sudo scutil --set HostName "$USER"
+sudo scutil --set LocalHostName "$USER"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$USER"
