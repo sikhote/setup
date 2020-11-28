@@ -61,4 +61,6 @@ gsettings set org.gnome.desktop.session idle-delay 0
 gsettings set org.gnome.desktop.screensaver lock-enabled false
 
 echo 'atom'
+mkdir -p ~/.atom
+cp config.cson ~/.atom/
 apm install --packages-file atom.txt
