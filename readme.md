@@ -3,6 +3,20 @@ Install as much as possible through cli
 
 ## install
 Download the project and then run `mac.sh` or `ubuntu.sh` line by line
+
+Ubuntu
+```
+sudo apt-get update
+sudo apt-get upgrade -d
+sudo apt-get -y install git
+```
+
+Mac
+```
+git
+```
+
+Both
 ```
 mkdir ~/Projects
 cd ~/Projects
