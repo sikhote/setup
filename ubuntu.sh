@@ -1,5 +1,5 @@
 echo 'zsh'
-sudo apt install zsh
+sudo apt install -y zsh
 chsh -s /usr/bin/zsh
 
 echo 'zsh'
