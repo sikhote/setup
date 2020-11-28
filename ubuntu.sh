@@ -1,6 +1,3 @@
-sudo apt-get update
-sudo apt-get upgrade -d
-
 echo 'zsh'
 sudo apt install zsh
 chsh -s /usr/bin/zsh
