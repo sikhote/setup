@@ -80,3 +80,7 @@ source ~/.bashrc
 echo 'desktop'
 cd ~/Downloads/setup-master/
 yes | cp desktop.jpg ~/Pictures
+
+echo 'preferences'
+gsettings set org.gnome.desktop.session idle-delay 0
+gsettings set org.gnome.desktop.screensaver lock-enabled false
