@@ -1,6 +1,7 @@
 echo 'zsh'
 sudo apt install -y zsh
 chsh -s /usr/bin/zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 yes | cp .zshrc ~/.zshrc
 mkdir -p ~/.oh-my-zsh/custom/themes
 yes | cp oxide.zsh-theme ~/.oh-my-zsh/custom/themes/oxide.zsh-theme
