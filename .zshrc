@@ -27,6 +27,7 @@ ZSH_DISABLE_COMPFIX=true
 DISABLE_AUTO_UPDATE=true
 
 # Zsh theme
-export ZSH="/Users/$USER/.oh-my-zsh"
+# mac: export ZSH="/Users/$USER/.oh-my-zsh"
+# ubuntu: export ZSH="/home/$USER/.oh-my-zsh"
 ZSH_THEME="oxide"
 source $ZSH/oh-my-zsh.sh
