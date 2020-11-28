@@ -6,6 +6,10 @@ yes | cp .zshrc ~/.zshrc
 mkdir -p ~/.oh-my-zsh/custom/themes
 yes | cp oxide.zsh-theme ~/.oh-my-zsh/custom/themes/oxide.zsh-theme
 
+echo 'vim'
+sudo apt install -y vim
+sudo update-alternatives --config editor
+
 echo 'screenshots'
 mkdir -p ~/Screenshots
 
