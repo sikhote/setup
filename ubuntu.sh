@@ -1,17 +1,9 @@
 echo 'zsh'
 sudo apt install -y zsh
 chsh -s /usr/bin/zsh
-
-echo 'zsh'
 yes | cp .zshrc ~/.zshrc
+mkdir -p ~/.oh-my-zsh/custom/themes
 yes | cp oxide.zsh-theme ~/.oh-my-zsh/custom/themes/oxide.zsh-theme
-
-echo 'nvm & npm'
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
-source ~/.zshrc
-nvm install 14
-nvm alias default 14
-npm install expo-cli --global
 
 echo 'screenshots'
 mkdir -p ~/Screenshots
@@ -20,18 +12,8 @@ echo 'git'
 git config --global user.name "David Sinclair"
 git config --global user.email "david@sinclair.tech"
 
-echo 'atom'
-apm install --packages-file atom.txt
-
-echo 'git'
-git config --global user.name "David Sinclair"
-git config --global user.email "david@sinclair.tech"
-
-echo 'chrome'
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i ./google-chrome*.deb
-sudo apt -f install
-rm -rf google-chrome-stable_current_amd64.deb
+echo 'curl'
+sudo apt install -y curl
 
 echo 'dropbox'
 curl -o dropbox.deb -L https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2018.11.28_amd64.deb
@@ -56,12 +38,15 @@ echo 'snap apps'
 sudo snap install vlc
 sudo snap install postman
 sudo snap install paintsupreme-3d
+sudo snap install atom --classic
+sudo snap install chromium
 
-echo 'nvm'
-sudo apt install -y curl
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+echo 'nvm & npm'
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+source ~/.zshrc
 nvm install 14
 nvm alias default 14
+npm install expo-cli --global
 
 echo 'yarn'
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
@@ -84,3 +69,6 @@ yes | cp desktop.jpg ~/Pictures
 echo 'preferences'
 gsettings set org.gnome.desktop.session idle-delay 0
 gsettings set org.gnome.desktop.screensaver lock-enabled false
+
+echo 'atom'
+apm install --packages-file atom.txt
