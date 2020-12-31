@@ -5,3 +5,4 @@ choco install vlc
 choco install firefox
 choco install 7zip
 choco install hwmonitor
+choco install epicgameslauncher
