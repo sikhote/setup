@@ -7,3 +7,4 @@ choco install 7zip
 choco install hwmonitor
 choco install epicgameslauncher
 choco install battle.net
+choco install discord
