@@ -8,3 +8,4 @@ choco install hwmonitor
 choco install epicgameslauncher
 choco install battle.net
 choco install discord
+choco install dropbox
