@@ -7,11 +7,10 @@ yes | cp oxide.zsh-theme ~/.oh-my-zsh/custom/themes/oxide.zsh-theme
 
 echo 'brew'
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install git yarn awscli dark-mode zsh composer watchman
+brew install git yarn
 brew cask install dropbox
 brew cask install firefox
 brew cask install google-chrome
-brew cask install steam
 brew cask install the-unarchiver
 brew cask install vlc
 brew cask install spectacle
@@ -19,8 +18,6 @@ brew cask install transmission
 brew cask install iterm2
 brew cask install postman
 brew cask install virtualbox
-brew cask install r
-brew cask install rstudio
 brew cask install atom
 
 echo 'nvm & npm'
@@ -135,7 +132,7 @@ echo 'desktop'
 yes | cp desktop.jpg ~/Pictures
 yes | cp desktop2.jpg ~/Pictures
 part1='tell application "System Events" to set picture of every desktop to ("/Users/'
-part2='/Pictures/desktop2.jpg" as POSIX file as alias)'
+part2='/Pictures/desktop.jpg" as POSIX file as alias)'
 osascript -e "$part1$USER$part2"
 
 echo 'computer'

@@ -16,7 +16,7 @@ sudo apt-get -y install git
 git
 ```
 
-### both
+### mac & ubuntu
 ```
 mkdir ~/Projects
 cd ~/Projects
