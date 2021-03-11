@@ -27,3 +27,8 @@ cd setup
 ## post install
 - add ssh key and change permissions: `chmod 400 ~/.ssh/id_rsa`
 - change password: `dscl . -passwd /Users/user`
+
+## aws cloud9 commands
+- copy ssh key `ssh-keygen -t rsa` and `cat ~/.ssh/id_rsa.pub`
+- install yarn `npm install --global yarn`
+- change prettier to be default formatter

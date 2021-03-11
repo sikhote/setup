@@ -8,17 +8,16 @@ yes | cp oxide.zsh-theme ~/.oh-my-zsh/custom/themes/oxide.zsh-theme
 echo 'brew'
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install git yarn
-brew cask install dropbox
-brew cask install firefox
-brew cask install google-chrome
-brew cask install the-unarchiver
-brew cask install vlc
-brew cask install spectacle
-brew cask install transmission
-brew cask install iterm2
-brew cask install postman
-brew cask install virtualbox
-brew cask install atom
+brew install --cask firefox
+brew install --cask dropbox
+brew install --cask google-chrome
+brew install --cask the-unarchiver
+brew install --cask vlc
+brew install --cask spectacle
+brew install --cask transmission
+brew install --cask postman
+brew install --cask atom
+brew install --cask vscodium
 
 echo 'nvm & npm'
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
@@ -27,15 +26,26 @@ nvm install 14
 nvm alias default 14
 npm install expo-cli --global
 
+echo 'vercel'
+yarn global add vercel
+
 echo 'screenshots'
 mkdir -p ~/Screenshots
 
 echo 'git'
 git config --global user.name "David Sinclair"
 git config --global user.email "david@sinclair.tech"
+git config pull.rebase false
 
-echo 'atom'
-apm install --packages-file atom.txt
+echo 'vscode'
+code --install-extension anseki.vscode-color
+code --install-extension EditorConfig.EditorConfig
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension esbenp.prettier-vscode
+code --install-extension eamodio.gitlens
+mkdir -p ~/Library/Application\ Support/VSCodium/User/snippets/
+yes | cp vscode/snippets/* ~/Library/Application\ Support/VSCodium/User/snippets/
+yes | cp vscode/settings.json ~/Library/Application\ Support/VSCodium/User/
 
 echo 'scroll direction'
 defaults write -g com.apple.swipescrolldirection -bool NO
