@@ -7,27 +7,16 @@ yes | cp oxide.zsh-theme ~/.oh-my-zsh/custom/themes/oxide.zsh-theme
 
 echo 'brew'
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install git yarn
-brew install --cask firefox
-brew install --cask dropbox
-brew install --cask google-chrome
-brew install --cask the-unarchiver
-brew install --cask vlc
-brew install --cask spectacle
-brew install --cask transmission
-brew install --cask postman
-brew install --cask atom
-brew install --cask vscodium
+brew install git firefox dropbox google-chrome the-unarchiver vlc spectacle transmission postman atom vscodium
 
 echo 'nvm & npm'
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 source ~/.zshrc
 nvm install 14
 nvm alias default 14
-npm install expo-cli --global
-
-echo 'vercel'
-yarn global add vercel
+npm install -g expo-cli
+npm install -g yarn
+npm install -g vercel
 
 echo 'screenshots'
 mkdir -p ~/Screenshots
