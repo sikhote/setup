@@ -30,5 +30,6 @@ cd setup
 
 ## aws cloud9 commands
 - copy ssh key `ssh-keygen -t rsa` and `cat ~/.ssh/id_rsa.pub`
+- node `nvm install 14; nvm alias default 14`
 - install yarn `npm install --global yarn`
 - change prettier to be default formatter
