@@ -26,7 +26,6 @@ export ZSH="/home/$USER/.oh-my-zsh"
 ZSH_DISABLE_COMPFIX="true"
 DISABLE_AUTO_UPDATE="true"
 DISABLE_AUTO_UPDATE="true"
-
 ZSH_THEME="oxide"
 
 plugins=(git)
@@ -48,8 +47,8 @@ alias gitpu="git push origin"
 ```
 nvm install 14
 nvm alias default 14
-install yarn `npm install --global yarn
-install yarn `npm install --global prettier
+npm install --global yarn
+npm install --global prettier
 ```
 
 ## git
