@@ -35,3 +35,9 @@ cd setup
 - change prettier to be default formatter
 - font size
 - elastic ip
+- git
+```
+git config --global user.name "David Sinclair"
+git config --global user.email "david@sinclair.tech"
+git config pull.rebase false
+```
