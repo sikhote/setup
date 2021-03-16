@@ -6,6 +6,15 @@ ssh-keygen -t rsa
 cat ~/.ssh/id_rsa.pub
 ```
 
+## nvm, node, yarn, prettier (for editor)
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+nvm install 14
+nvm alias default 14
+npm install --global yarn
+npm install --global prettier
+```
+
 ## zsh and ohmyzsh
 - install
 ```
@@ -15,17 +24,15 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 mkdir -p ~/.oh-my-zsh/custom/themes
 yes | cp oxide.zsh-theme ~/.oh-my-zsh/custom/themes/oxide.zsh-theme
 ```
-- append to `.bashrc`
-```
-zsh
-```
 - replace at `.zshrc`
 ```
-export ZSH="/home/$USER/.oh-my-zsh"
+export ZSH="/home/ubuntu/.oh-my-zsh"
 
 ZSH_DISABLE_COMPFIX="true"
 DISABLE_AUTO_UPDATE="true"
 DISABLE_AUTO_UPDATE="true"
+
+export ZSH="/home/$USER/.oh-my-zsh"
 ZSH_THEME="oxide"
 
 plugins=(git)
@@ -41,14 +48,13 @@ alias gitsac="git status && git add -A && git commit -m"
 alias gitco="git checkout"
 alias gitp="git pull origin"
 alias gitpu="git push origin"
-```
 
-## nvm, node, yarn, prettier (for editor)
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 ```
-nvm install 14
-nvm alias default 14
-npm install --global yarn
-npm install --global prettier
+- append to `.bashrc`
+```
+zsh
 ```
 
 ## git
