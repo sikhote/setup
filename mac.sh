@@ -7,14 +7,14 @@ yes | cp oxide.zsh-theme ~/.oh-my-zsh/custom/themes/oxide.zsh-theme
 
 echo 'brew'
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install git firefox dropbox google-chrome the-unarchiver vlc spectacle transmission postman atom vscodium
+brew install git firefox dropbox google-chrome the-unarchiver vlc spectacle postman vscodium
+brew install --cask transmission
 
 echo 'nvm & npm'
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 source ~/.zshrc
 nvm install 14
 nvm alias default 14
-npm install -g expo-cli
 npm install -g yarn
 npm install -g vercel
 
@@ -27,12 +27,12 @@ git config --global user.email "david@sinclair.tech"
 git config pull.rebase false
 
 echo 'vscode'
-code --install-extension anseki.vscode-color
-code --install-extension EditorConfig.EditorConfig
-code --install-extension dbaeumer.vscode-eslint
-code --install-extension esbenp.prettier-vscode
-code --install-extension eamodio.gitlens
-mkdir -p ~/Library/Application\ Support/VSCodium/User/snippets/
+codium --install-extension anseki.vscode-color
+codium --install-extension EditorConfig.EditorConfig
+codium --install-extension dbaeumer.vscode-eslint
+codium --install-extension esbenp.prettier-vscode
+codium --install-extension eamodio.gitlens
+codium -p ~/Library/Application\ Support/VSCodium/User/snippets/
 yes | cp vscode/snippets/* ~/Library/Application\ Support/VSCodium/User/snippets/
 yes | cp vscode/settings.json ~/Library/Application\ Support/VSCodium/User/
 
