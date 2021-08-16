@@ -32,7 +32,7 @@ codium --install-extension EditorConfig.EditorConfig
 codium --install-extension dbaeumer.vscode-eslint
 codium --install-extension esbenp.prettier-vscode
 codium --install-extension eamodio.gitlens
-codium -p ~/Library/Application\ Support/VSCodium/User/snippets/
+mkdir -p ~/Library/Application\ Support/VSCodium/User/snippets/
 yes | cp vscode/snippets/* ~/Library/Application\ Support/VSCodium/User/snippets/
 yes | cp vscode/settings.json ~/Library/Application\ Support/VSCodium/User/
 
