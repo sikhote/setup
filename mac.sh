@@ -10,8 +10,8 @@ echo 'brew'
 brew install git firefox dropbox google-chrome the-unarchiver vlc spectacle postman vscodium fnm
 brew install --cask transmission
 
-echo 'nvm & npm'
-fnm install --lts
+echo 'npm'
+fnm install 16
 source ~/.zshrc
 npm install -g yarn
 npm install -g vercel
@@ -21,15 +21,17 @@ mkdir -p ~/Screenshots
 
 echo 'git'
 git config --global user.name "David Sinclair"
-git config --global user.email "david@sinclair.tech"
+git config --global user.email "dsincla@rei.com"
 git config pull.rebase false
 
 echo 'vscode'
-codium --install-extension anseki.vscode-color
 codium --install-extension EditorConfig.EditorConfig
 codium --install-extension dbaeumer.vscode-eslint
 codium --install-extension esbenp.prettier-vscode
 codium --install-extension eamodio.gitlens
+codium --install-extension robbowen.synthwave-vscode
+codium --install-extension octref.vetur
+
 mkdir -p ~/Library/Application\ Support/VSCodium/User/snippets/
 yes | cp vscode/snippets/* ~/Library/Application\ Support/VSCodium/User/snippets/
 yes | cp vscode/settings.json ~/Library/Application\ Support/VSCodium/User/
@@ -127,7 +129,6 @@ chflags nohidden ~/Library
 
 echo 'desktop'
 yes | cp desktop.jpg ~/Pictures
-yes | cp desktop2.jpg ~/Pictures
 part1='tell application "System Events" to set picture of every desktop to ("/Users/'
 part2='/Pictures/desktop.jpg" as POSIX file as alias)'
 osascript -e "$part1$USER$part2"

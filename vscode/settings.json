@@ -1,5 +1,4 @@
 {
-  "workbench.colorTheme": "Solarized Dark",
   "workbench.startupEditor": "newUntitledFile",
   "window.nativeTabs": true,
   "editor.rulers": [
@@ -9,7 +8,6 @@
   "editor.snippetSuggestions": "top",
   "editor.wordWrap": "on",
   "editor.wrappingIndent": "indent",
-  "xo.enable": true,
   "javascript.updateImportsOnFileMove.enabled": "never",
   "window.restoreWindows": "all",
   "workbench.tree.indent": 20,
@@ -23,6 +21,7 @@
     "**/.svn": false,
     "**/CVS": false
   },
+  "editor.formatOnSave": false,
   "editor.find.seedSearchStringFromSelection": false,
   "editor.suggest.localityBonus": true,
   "javascript.suggest.autoImports": false,
@@ -36,6 +35,39 @@
   "workbench.editor.tabSizing": "shrink",
   "update.showReleaseNotes": false,
   "gitlens.showWhatsNewAfterUpgrades": false,
-  "window.zoomLevel": 0,
-  "editor.occurrencesHighlight": false
+  "editor.occurrencesHighlight": false,
+  "editor.fontSize": 14,
+  "security.workspace.trust.untrustedFiles": "open",
+  "vetur.completion.autoImport": false,
+  "vetur.format.enable": false,
+  "vetur.format.defaultFormatterOptions": {
+
+    "js-beautify-html": {
+      "wrap_attributes": "force-expand-multiline"
+    },
+    "prettyhtml": {
+      "printWidth": 100,
+      "singleQuote": false,
+      "wrapAttributes": false,
+      "sortAttributes": false
+    }
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorTheme": "SynthWave '84",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.activityBar.visible": false
 }
