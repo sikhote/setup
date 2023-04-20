@@ -18,3 +18,10 @@ ZSH_THEME="oxide"
 source ~/.oh-my-zsh/oh-my-zsh.sh
 
 eval "$(fnm env --use-on-cd --shell=zsh)"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# Added by install-mac-toolchain.sh
+. ~/code/developer-setup/mac/.reirc

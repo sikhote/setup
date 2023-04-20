@@ -6,9 +6,10 @@ yes | cp .zshrc ~/.zshrc
 yes | cp oxide.zsh-theme ~/.oh-my-zsh/custom/themes/oxide.zsh-theme
 
 echo 'brew'
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew install git firefox dropbox google-chrome the-unarchiver vlc spectacle postman vscodium fnm
 brew install --cask transmission
+brew install --cask docker
 
 echo 'npm'
 fnm install 16
