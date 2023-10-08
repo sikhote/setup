@@ -12,11 +12,10 @@ ZSH_DISABLE_COMPFIX=true
 DISABLE_AUTO_UPDATE=true
 
 # Zsh theme
-# mac: export ZSH="/Users/$USER/.oh-my-zsh"
-# ubuntu: export ZSH="/home/$USER/.oh-my-zsh"
 ZSH_THEME="oxide"
 source ~/.oh-my-zsh/oh-my-zsh.sh
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(fnm env --use-on-cd --shell=zsh)"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!

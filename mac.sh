@@ -10,12 +10,12 @@ echo 'brew'
 brew install git firefox dropbox google-chrome the-unarchiver vlc spectacle postman vscodium fnm
 brew install --cask transmission
 brew install --cask docker
+brew install --cask linearmouse
 
 echo 'npm'
-fnm install 16
+fnm install 16.13
 source ~/.zshrc
 npm install -g yarn
-npm install -g vercel
 
 echo 'screenshots'
 mkdir -p ~/Screenshots
