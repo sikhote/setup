@@ -11,6 +11,7 @@ brew install git firefox dropbox google-chrome the-unarchiver vlc spectacle post
 brew install --cask transmission
 brew install --cask docker
 brew install --cask linearmouse
+brew install --cask steam
 
 echo 'npm'
 fnm install 16.13
