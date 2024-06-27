@@ -13,6 +13,7 @@ brew install --cask docker
 brew install --cask linearmouse
 brew install --cask plex-media-server
 brew install --cask keepingyouawake
+brew install --cask steam
 
 echo 'npm'
 fnm install 20
