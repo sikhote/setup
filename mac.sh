@@ -11,9 +11,11 @@ brew install git firefox dropbox google-chrome the-unarchiver vlc spectacle post
 brew install --cask transmission
 brew install --cask docker
 brew install --cask linearmouse
+brew install --cask plex-media-server
+brew install --cask keepingyouawake
 
 echo 'npm'
-fnm install 16.13
+fnm install 20
 source ~/.zshrc
 npm install -g yarn
 
@@ -119,7 +121,6 @@ chflags nohidden ~/Library
 # curl -s "https://get.sdkman.io" | bash
 # source "$HOME/.sdkman/bin/sdkman-init.sh"
 # sdk install java 8.0.222.hs-adpt
-
 # echo 'android'
 # brew install ant
 # brew install maven
