@@ -1,11 +1,19 @@
-Write-Host "choco"
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-choco install steam
-choco install vlc
-choco install firefox
-choco install 7zip
-choco install hwmonitor
-choco install epicgameslauncher
-choco install battle.net
-choco install discord
-choco install dropbox
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+
+scoop bucket add extras
+scoop install extras/fancontrol
+scoop install extras/vlc
+scoop install extras/firefox
+scoop install extras/hwmonitor
+
+scoop bucket add games
+scoop install games/steam
+scoop install games/epic-games-launcher
+scoop install games/battlenet
+
+scoop bucket add main
+scoop install main/7zip
+
+scoop bucket add nonportable
+scoop install nonportable/dropbox-np
