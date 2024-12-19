@@ -1,3 +1,7 @@
+# Windows install instructions
+# - Shift F10 once installer gets passed first reboot
+# type "oobe\bypassnro"
+
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 scoop install git
