@@ -15,6 +15,7 @@ scoop install games/battlenet
 
 scoop bucket add main
 scoop install main/7zip
+scoop install main/plex-server
 
 scoop bucket add nonportable
 scoop install nonportable/dropbox-np
