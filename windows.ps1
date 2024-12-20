@@ -13,6 +13,7 @@ scoop bucket add extras
 scoop install extras/fancontrol
 scoop install extras/vlc
 scoop install extras/firefox
+scoop install extras/chromium
 scoop install extras/hwmonitor
 scoop bucket add games
 scoop install games/steam
