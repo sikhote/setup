@@ -15,6 +15,7 @@ scoop install extras/vlc
 scoop install extras/firefox
 scoop install extras/chromium
 scoop install extras/hwmonitor
+scoop install extras/vscodium
 scoop bucket add games
 scoop install games/steam
 scoop install games/epic-games-launcher
