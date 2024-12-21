@@ -1,6 +1,6 @@
 # Windows install
-# - Shift F10 once installer gets passed first reboot
-# - type "oobe\bypassnro"
+# - Select English (global) for currency
+# - Shift F10 once installer gets passed first reboot and type "oobe\bypassnro"
 #
 # Windows activate
 # - https://github.com/massgravel/Microsoft-Activation-Scripts
@@ -12,7 +12,6 @@ scoop install git
 scoop bucket add extras
 scoop install extras/fancontrol
 scoop install extras/vlc
-scoop install extras/firefox
 scoop install extras/chromium
 scoop install extras/hwmonitor
 scoop install extras/vscodium
