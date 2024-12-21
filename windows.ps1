@@ -1,7 +1,7 @@
 # Windows install
 # - Select English (global) for currency
-# - Shift F10 once installer gets passed first reboot and type "oobe\bypassnro"
-#
+# - Windows 11 Pro, for study, join domain, just local
+
 # Windows activate
 # - https://github.com/massgravel/Microsoft-Activation-Scripts
 
