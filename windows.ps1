@@ -15,6 +15,7 @@ scoop install extras/vlc
 scoop install extras/chromium
 scoop install extras/hwmonitor
 scoop install extras/vscodium
+scoop install extras/qbittorrent
 scoop bucket add games
 scoop install games/steam
 scoop bucket add main
