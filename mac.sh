@@ -1,13 +1,7 @@
-echo 'zsh'
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-echo 'zsh'
-yes | cp .zshrc ~/.zshrc
-yes | cp oxide.zsh-theme ~/.oh-my-zsh/custom/themes/oxide.zsh-theme
-
 echo 'brew'
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew install git firefox dropbox the-unarchiver vlc spectacle vscodium fnm
+brew install git firefox dropbox the-unarchiver vlc vscodium fnm
+brew install --cask rectangle
 brew install --cask transmission
 brew install --cask docker
 brew install --cask linearmouse
@@ -15,6 +9,13 @@ brew install --cask keepingyouawake
 brew install --cask steam
 brew install --cask stretchly
 brew install --cask chromium
+
+echo 'zsh'
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+echo 'zsh'
+yes | cp .zshrc ~/.zshrc
+yes | cp oxide.zsh-theme ~/.oh-my-zsh/custom/themes/oxide.zsh-theme
 
 echo 'music'
 pip install --break-system-packages beets
