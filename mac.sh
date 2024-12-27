@@ -11,9 +11,13 @@ brew install git firefox dropbox google-chrome the-unarchiver vlc spectacle post
 brew install --cask transmission
 brew install --cask docker
 brew install --cask linearmouse
-brew install --cask plex-media-server
 brew install --cask keepingyouawake
 brew install --cask steam
+
+echo 'music'
+pip install --break-system-packages beets
+pip install --break-system-packages pyacoustid
+brew install python3 pipx chromaprint
 
 echo 'npm'
 fnm install 20

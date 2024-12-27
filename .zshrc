@@ -24,3 +24,6 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 # Added by install-mac-toolchain.sh
 . ~/code/developer-setup/mac/.reirc
+
+export PATH="$PATH:$(brew --prefix python)/libexec/bin"
+export PATH="$PATH:/Users/cyclo/.local/bin"
