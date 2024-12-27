@@ -137,12 +137,6 @@ brew cask install android-sdk
 brew cask install android-ndk
 yes | sudo sdkmanager --licenses
 
-echo 'desktop'
-yes | cp desktop.jpg ~/Pictures
-part1='tell application "System Events" to set picture of every desktop to ("/Users/'
-part2='/Pictures/desktop.jpg" as POSIX file as alias)'
-osascript -e "$part1$USER$part2"
-
 echo 'computer'
 sudo scutil --set ComputerName "$USER"
 sudo scutil --set HostName "$USER"
