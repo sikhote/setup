@@ -7,14 +7,14 @@ yes | cp oxide.zsh-theme ~/.oh-my-zsh/custom/themes/oxide.zsh-theme
 
 echo 'brew'
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew install git firefox dropbox google-chrome the-unarchiver vlc spectacle postman vscodium fnm
+brew install git firefox dropbox the-unarchiver vlc spectacle vscodium fnm
 brew install --cask transmission
 brew install --cask docker
 brew install --cask linearmouse
 brew install --cask keepingyouawake
 brew install --cask steam
 brew install --cask stretchly
-brew install --cask arc
+brew install --cask chromium
 
 echo 'music'
 pip install --break-system-packages beets
