@@ -8,7 +8,7 @@ brew install --cask linearmouse
 brew install --cask keepingyouawake
 brew install --cask steam
 brew install --cask stretchly
-brew install --cask chromium
+brew install --cask google-chrome
 
 echo 'zsh'
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
