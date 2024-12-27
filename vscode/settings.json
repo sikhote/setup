@@ -26,16 +26,17 @@
   "editor.suggest.localityBonus": true,
   "javascript.suggest.autoImports": false,
   "[javascript]": {
+
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "explorer.autoReveal": false,
   "workbench.editor.tabSizing": "shrink",
   "update.showReleaseNotes": false,
   "gitlens.showWhatsNewAfterUpgrades": false,
-  "editor.occurrencesHighlight": false,
+  "editor.occurrencesHighlight": "off",
   "editor.fontSize": 14,
   "security.workspace.trust.untrustedFiles": "open",
   "vetur.completion.autoImport": false,
@@ -69,9 +70,17 @@
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.activityBar.visible": false,
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "explorer.confirmDelete": false
+  "explorer.confirmDelete": false,
+  "terminal.integrated.scrollback": 5000,
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "explorer.confirmDragAndDrop": false,
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.customTitleBarVisibility": "never",
+  "editor.codeActionsOnSave": {},
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
