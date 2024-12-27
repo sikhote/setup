@@ -15,7 +15,11 @@ DISABLE_AUTO_UPDATE=true
 ZSH_THEME="oxide"
 source ~/.oh-my-zsh/oh-my-zsh.sh
 
+# Apple silicon
 eval "$(/opt/homebrew/bin/brew shellenv)"
+# Apple intel
+eval "$(/usr/local/homebrew/bin/brew shellenv)"
+
 eval "$(fnm env --use-on-cd --shell=zsh)"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
