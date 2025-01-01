@@ -9,6 +9,7 @@
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 scoop install git
+scoop install rustdesk
 scoop bucket add extras
 scoop install extras/fancontrol
 scoop install extras/vlc
