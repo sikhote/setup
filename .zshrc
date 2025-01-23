@@ -15,9 +15,16 @@ DISABLE_AUTO_UPDATE=true
 ZSH_THEME="oxide"
 source ~/.oh-my-zsh/oh-my-zsh.sh
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
+# Apple silicon
+# eval "$(/opt/homebrew/bin/brew shellenv)"
+# Apple intel
+eval "$(/usr/local/homebrew/bin/brew shellenv)"
+
 eval "$(fnm env --use-on-cd --shell=zsh)"
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+# THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+# export SDKMAN_DIR="$HOME/.sdkman"
+# [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+export PATH="$PATH:$(brew --prefix python)/libexec/bin"
+export PATH="$PATH:/Users/cyclo/.local/bin"

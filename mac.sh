@@ -1,3 +1,15 @@
+echo 'brew'
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew install git firefox dropbox the-unarchiver vlc vscodium fnm
+brew install --cask rectangle
+brew install --cask transmission
+brew install --cask docker
+brew install --cask linearmouse
+brew install --cask keepingyouawake
+brew install --cask steam
+brew install --cask stretchly
+brew install --cask google-chrome
+
 echo 'zsh'
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
@@ -5,17 +17,10 @@ echo 'zsh'
 yes | cp .zshrc ~/.zshrc
 yes | cp oxide.zsh-theme ~/.oh-my-zsh/custom/themes/oxide.zsh-theme
 
-echo 'brew'
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew install git firefox dropbox google-chrome the-unarchiver vlc spectacle postman vscodium fnm
-brew install --cask transmission
-brew install --cask docker
-brew install --cask linearmouse
-brew install --cask plex-media-server
-brew install --cask keepingyouawake
-brew install --cask steam
-brew install --cask stretchly
-brew install --cask arc
+echo 'music'
+pip install --break-system-packages beets
+pip install --break-system-packages pyacoustid
+brew install python3 pipx chromaprint
 
 echo 'npm'
 fnm install 20
@@ -131,12 +136,6 @@ brew install gradle
 brew cask install android-sdk
 brew cask install android-ndk
 yes | sudo sdkmanager --licenses
-
-echo 'desktop'
-yes | cp desktop.jpg ~/Pictures
-part1='tell application "System Events" to set picture of every desktop to ("/Users/'
-part2='/Pictures/desktop.jpg" as POSIX file as alias)'
-osascript -e "$part1$USER$part2"
 
 echo 'computer'
 sudo scutil --set ComputerName "$USER"
