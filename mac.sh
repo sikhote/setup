@@ -18,9 +18,9 @@ yes | cp .zshrc ~/.zshrc
 yes | cp oxide.zsh-theme ~/.oh-my-zsh/custom/themes/oxide.zsh-theme
 
 echo 'music'
+brew install python3 pipx chromaprint
 pip install --break-system-packages beets
 pip install --break-system-packages pyacoustid
-brew install python3 pipx chromaprint
 
 echo 'npm'
 fnm install 20
@@ -28,11 +28,11 @@ source ~/.zshrc
 npm install -g yarn
 
 echo 'screenshots'
-mkdir -p ~/Screenshots
+mkdir -p ~/screenshots
 
 echo 'git'
 git config --global user.name "David Sinclair"
-git config --global user.email "dsincla@rei.com"
+git config --global user.email "david@sinclair.tech"
 git config pull.rebase false
 
 echo 'vscode'
@@ -91,7 +91,7 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.iokit.AmbientLightSensor "Automatic Display Enabled" -int 0
 defaults write com.apple.iokit.AmbientLightSensor "Automatic Keyboard Enabled" -int 0
-defaults write com.apple.screencapture location ~/Screenshots
+defaults write com.apple.screencapture location ~/screenshots
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 1800
 defaults write com.apple.screensaver idleTime -int 0
@@ -118,9 +118,6 @@ sudo pmset -a autorestart 1
 sudo pmset -a acwake 1
 sudo pmset -a lessbright 0
 sudo pmset -a halfdim 0
-
-echo 'apps from anywhere'
-sudo spctl --master-disable
 
 echo 'library'
 chflags nohidden ~/Library
