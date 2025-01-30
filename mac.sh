@@ -11,6 +11,7 @@ brew install --cask stretchly
 brew install --cask google-chrome
 brew install --cask zoom
 brew install --cask webex
+brew install --cask microsoft-teams
 
 echo 'zsh'
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
