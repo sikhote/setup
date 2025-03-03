@@ -1,6 +1,7 @@
 echo 'brew'
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew install git firefox dropbox the-unarchiver vlc vscodium fnm
+eval "$(/opt/homebrew/bin/brew shellenv)"
+brew install firefox dropbox the-unarchiver vlc vscodium fnm
 brew install --cask rectangle
 brew install --cask transmission
 brew install --cask docker
@@ -44,7 +45,6 @@ codium --install-extension dbaeumer.vscode-eslint
 codium --install-extension esbenp.prettier-vscode
 codium --install-extension eamodio.gitlens
 codium --install-extension robbowen.synthwave-vscode
-codium --install-extension octref.vetur
 
 mkdir -p ~/Library/Application\ Support/VSCodium/User/snippets/
 yes | cp vscode/snippets/* ~/Library/Application\ Support/VSCodium/User/snippets/
@@ -63,9 +63,6 @@ defaults write com.apple.dock persistent-apps -array
 
 echo 'recent apps in dock'
 defaults write com.apple.dock show-recents -bool FALSE
-
-echo 'password policies'
-pwpolicy -clearaccountpolicies
 
 echo 'finder preferences'
 /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy name" ~/Library/Preferences/com.apple.finder.plist
@@ -136,9 +133,3 @@ brew install gradle
 brew cask install android-sdk
 brew cask install android-ndk
 yes | sudo sdkmanager --licenses
-
-echo 'computer'
-sudo scutil --set ComputerName "$USER"
-sudo scutil --set HostName "$USER"
-sudo scutil --set LocalHostName "$USER"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$USER"
