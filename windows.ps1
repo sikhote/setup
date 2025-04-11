@@ -1,5 +1,5 @@
 # Windows install
-# - Select English (global) for currency
+# - Select English (world) for currency
 # - Windows 11 Pro, for study, join domain, just local
 
 # Windows activate
