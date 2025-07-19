@@ -6,7 +6,7 @@
 # - https://github.com/massgravel/Microsoft-Activation-Scripts
 
 # Update or download App Installer
-# - https://learn.microsoft.com/en-us/windows/msix/app-installer/install-update-app-installer
+# - https://apps.microsoft.com/detail/9nblggh4nns1
 
 # winget
 winget install -e --id Git.Git
