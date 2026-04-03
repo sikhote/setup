@@ -1,30 +1,24 @@
 # Windows install
-# - Select English (global) for currency
+# - Select English (world) for currency
 # - Windows 11 Pro, for study, join domain, just local
 
 # Windows activate
 # - https://github.com/massgravel/Microsoft-Activation-Scripts
 
-# Scoop
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
-scoop install git
-scoop install rustdesk
-scoop bucket add extras
-scoop install extras/fancontrol
-scoop install extras/vlc
-scoop install extras/chromium
-scoop install extras/hwmonitor
-scoop install extras/vscodium
-scoop install extras/qbittorrent
-scoop bucket add games
-scoop install games/steam
-scoop bucket add main
-scoop install main/nanazip
-scoop install main/plex-server
-scoop bucket add nonportable
-scoop install nonportable/dropbox-np
+# Update or download App Installer
+# - https://apps.microsoft.com/detail/9nblggh4nns1
 
-# Scoop run as admin
-scoop install games/epic-games-launcher
-scoop install games/battlenet
+# winget
+winget install -e --id Git.Git
+winget install -e --id RustDesk.RustDesk
+winget install -e --id Mozilla.Firefox
+winget install -e --id VideoLAN.VLC
+winget install -e --id Hibbiki.Chromium
+winget install -e --id CPUID.HWMonitor
+winget install -e --id VSCodium.VSCodium
+winget install -e --id qBittorrent.qBittorrent
+winget install -e --id Valve.Steam
+winget install -e --id M2Team.NanaZip
+winget install -e --id Plex.PlexMediaServer
+winget install -e --id Dropbox.Dropbox
+winget install -e --id=RamenSoftware.Windhawk
