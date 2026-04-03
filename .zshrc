@@ -16,6 +16,7 @@ ZSH_THEME="oxide"
 source ~/.oh-my-zsh/oh-my-zsh.sh
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
+export PATH=$(brew --prefix)/bin:$PATH
 
 eval "$(fnm env --use-on-cd --shell=zsh)"
 
@@ -26,3 +27,10 @@ eval "$(fnm env --use-on-cd --shell=zsh)"
 # Python
 # export PATH="$PATH:$(brew --prefix python)/libexec/bin"
 # export PATH="$PATH:/Users/cyclo/.local/bin"
+
+# bun completions
+[ -s "/Users/davidsinclair/.bun/_bun" ] && source "/Users/davidsinclair/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

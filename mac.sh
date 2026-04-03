@@ -6,13 +6,14 @@ brew install --cask rectangle
 brew install --cask transmission
 brew install --cask docker
 brew install --cask linearmouse
-brew install --cask keepingyouawake
 brew install --cask steam
 brew install --cask stretchly
 brew install --cask google-chrome
 brew install --cask zoom
-brew install --cask webex
+brew install --cask webex-meetings
 brew install --cask microsoft-teams
+brew install --cask keepingyouawake
+brew install --cask betterdisplay
 
 echo 'zsh'
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -31,12 +32,15 @@ fnm install 20
 source ~/.zshrc
 npm install -g yarn
 
+echo 'bun'
+curl -fsSL https://bun.sh/install | bash
+
 echo 'screenshots'
 mkdir -p ~/screenshots
 
 echo 'git'
 git config --global user.name "David Sinclair"
-git config --global user.email "david@sinclair.tech"
+git config --global user.email "david_sinclair@apple.com"
 git config pull.rebase false
 
 echo 'vscode'
@@ -45,6 +49,8 @@ codium --install-extension dbaeumer.vscode-eslint
 codium --install-extension esbenp.prettier-vscode
 codium --install-extension eamodio.gitlens
 codium --install-extension robbowen.synthwave-vscode
+codium --install-extension svelte.svelte-vscode
+codium --install-extension GraphQL.vscode-graphql
 
 mkdir -p ~/Library/Application\ Support/VSCodium/User/snippets/
 yes | cp vscode/snippets/* ~/Library/Application\ Support/VSCodium/User/snippets/
@@ -123,13 +129,13 @@ echo 'library'
 chflags nohidden ~/Library
 
 # echo 'sdkman'
-curl -s "https://get.sdkman.io" | bash
-source "$HOME/.sdkman/bin/sdkman-init.sh"
-sdk install java 8.0.222.hs-adpt
-echo 'android'
-brew install ant
-brew install maven
-brew install gradle
-brew cask install android-sdk
-brew cask install android-ndk
-yes | sudo sdkmanager --licenses
+# curl -s "https://get.sdkman.io" | bash
+# source "$HOME/.sdkman/bin/sdkman-init.sh"
+# sdk install java 8.0.222.hs-adpt
+# echo 'android'
+# brew install ant
+# brew install maven
+# brew install gradle
+# brew cask install android-sdk
+# brew cask install android-ndk
+# yes | sudo sdkmanager --licenses
