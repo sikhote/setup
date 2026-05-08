@@ -22,3 +22,4 @@ winget install -e --id M2Team.NanaZip
 winget install -e --id Plex.PlexMediaServer
 winget install -e --id Dropbox.Dropbox
 winget install -e --id=RamenSoftware.Windhawk
+winget install -e --id EpicGames.EpicGamesLauncher
