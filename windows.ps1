@@ -23,3 +23,4 @@ winget install -e --id Plex.PlexMediaServer
 winget install -e --id Dropbox.Dropbox
 winget install -e --id=RamenSoftware.Windhawk
 winget install -e --id EpicGames.EpicGamesLauncher
+winget install -e --id Proton.ProtonDrive
