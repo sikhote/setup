@@ -10,7 +10,6 @@
 
 # winget
 winget install -e --id Git.Git
-winget install -e --id RustDesk.RustDesk
 winget install -e --id Mozilla.Firefox
 winget install -e --id VideoLAN.VLC
 winget install -e --id Hibbiki.Chromium
@@ -19,8 +18,8 @@ winget install -e --id VSCodium.VSCodium
 winget install -e --id qBittorrent.qBittorrent
 winget install -e --id Valve.Steam
 winget install -e --id M2Team.NanaZip
-winget install -e --id Plex.PlexMediaServer
 winget install -e --id Dropbox.Dropbox
 winget install -e --id=RamenSoftware.Windhawk
 winget install -e --id EpicGames.EpicGamesLauncher
-winget install -e --id Proton.ProtonDrive
+winget install -e --id SteelSeries.GG
+winget install Jellyfin.Server
