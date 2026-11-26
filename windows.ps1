@@ -7,9 +7,6 @@
 # Update or download App Installer
 # - https://apps.microsoft.com/detail/9nblggh4nns1
 
-# Other
-# - Mouse: disable pointer precision
-
 # winget
 winget install -e --id Git.Git
 winget install -e --id Mozilla.Firefox
@@ -25,3 +22,7 @@ winget install -e --id=RamenSoftware.Windhawk
 winget install -e --id EpicGames.EpicGamesLauncher
 winget install -e --id SteelSeries.GG
 winget install Jellyfin.Server
+
+# Other
+# - Mouse: disable "Pointer Precision"
+# - Windhawk: install "Always show all taskbar tray icons"
