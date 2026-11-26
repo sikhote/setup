@@ -1,5 +1,4 @@
 # Windows install
-# - Select English (world) for currency
 # - Windows 11 Pro, for study, join domain, just local
 
 # Windows activate
@@ -7,6 +6,9 @@
 
 # Update or download App Installer
 # - https://apps.microsoft.com/detail/9nblggh4nns1
+
+# Other
+# - Mouse: disable pointer precision
 
 # winget
 winget install -e --id Git.Git
