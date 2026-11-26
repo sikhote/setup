@@ -26,3 +26,4 @@ winget install Jellyfin.Server
 # Other
 # - Mouse: disable "Pointer Precision"
 # - Windhawk: install "Always show all taskbar tray icons"
+# - Windows Defender: Add Inbound Rule for "jelly.exe" 
