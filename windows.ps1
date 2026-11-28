@@ -21,6 +21,7 @@ winget install -e --id Dropbox.Dropbox
 winget install -e --id=RamenSoftware.Windhawk
 winget install -e --id EpicGames.EpicGamesLauncher
 winget install -e --id SteelSeries.GG
+winget install -e --id MusicBrainz.Picard
 winget install Jellyfin.Server
 
 # Other
